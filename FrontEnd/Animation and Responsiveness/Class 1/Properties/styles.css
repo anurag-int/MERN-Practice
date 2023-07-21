@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    border: 1px solid black;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+    display: grid;
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    /* grid-gap: 10px; */
+
+    /*  Justify Content --> applied in container(div), working in main axis
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; 
+    */
+
+    /* Align-items --> applied in container(div), working in cross axis */
+    /* align-items: start; 
+    align-items: end;
+    align-items: center;
+    align-items: stretch; */
+    place-content: center;
+    place-items: center;
+
+}
+.box{
+    border: 1px solid black;
+    background-color: aqua;
+    
+}
+
+#box1{
+    /* justify-self: center; */
+    /* align-self: center;
+    justify-self: end;
+    justify-self: center;
+     */
+    
+}
+#box2{
+    /* justify-self: ; */
+}

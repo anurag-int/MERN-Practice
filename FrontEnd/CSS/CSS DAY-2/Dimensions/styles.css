@@ -1,0 +1,16 @@
+.div1{
+    border: 1px solid black;
+    max-height: 100px;
+    overflow: scroll;
+}
+#div2{
+    height: 50px;
+    border: 1px solid black;
+    /*
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;  
+     */
+    overflow: auto;
+}

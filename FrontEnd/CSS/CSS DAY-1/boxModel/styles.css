@@ -1,0 +1,29 @@
+.box{
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#A{
+    background-color: rgb(0, 0, 255);
+}
+
+#B{
+    background-color: rgb(255, 223, 0);
+}
+
+#C{
+    /* background-color:  green; */
+    
+    /* RGB Function*/
+    background-color: rgb(255, 85, 0);
+
+    
+    /* Hexadecimal-FUnction
+    background-color: #838065; */
+}
+
+#D{
+    height: 100px;
+    width: 100px;
+}

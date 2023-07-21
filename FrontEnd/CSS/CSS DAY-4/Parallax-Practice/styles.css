@@ -1,0 +1,135 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    padding: 0%;
+}
+
+.title{
+    transform: translateY(-50%);
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    /* z-index: -1; */
+}
+
+.background
+{
+    /* Translate for (door jaan) and scale means image bada krna */
+    transform: translateZ(-40px) scale(6);    
+}
+
+.foreground
+{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* It will going to stretch the image from left, right */
+    object-fit: cover;
+    
+} 
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 5rem;
+    letter-spacing: 4px;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0);
+}
+
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+} 
+
+.bg1{
+    background-image: url(sport-1.jpg);
+}
+.bg2{
+    background-image: url(sport-2.jpg);
+}
+.bg3{
+
+    /* so that we can write anything over background image. */
+    background-image: url(sport-3.jpg);
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+
+}
+
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+
+    /* the image will be now be fixed in the background */
+    background-attachment: fixed;
+
+    /* like object: fit property */
+    background-size: cover;
+
+    /* To get the centre of the image */
+    background-position: center;
+    height: 500px;
+
+}
+
+.sec{
+    position: absolute;
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #02b7ff;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 4px;
+    border-radius: 10px;
+    background-color: #fff;
+}

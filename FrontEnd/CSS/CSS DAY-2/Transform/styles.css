@@ -1,0 +1,18 @@
+.div1{
+
+    transform: translate(90vh, 20px);
+    
+}
+.div2{
+    transform: translate();
+}
+.div3{
+    transform: translate(90vh, 700px);
+}
+.div4{
+    transform: translate(0px, 700px);
+}
+.div5{
+    transform: translate(45vh, 350px);
+}
+

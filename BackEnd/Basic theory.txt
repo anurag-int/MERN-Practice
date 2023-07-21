@@ -1,0 +1,22 @@
+Difference between Authorization and Authentication
+
+
+
+Authorization ---> access rights / premission 
+
+like which user to show which which details...
+
+Ex..	All users dashboard	
+Admin --> All courses
+User --> buyed Courses only
+Normal_user --> No course
+
+
+
+
+
+
+
+
+
+Authentication --> check if the user if valid user or not..
