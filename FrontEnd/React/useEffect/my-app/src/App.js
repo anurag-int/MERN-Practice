@@ -8,7 +8,7 @@ function App() {
 
 
   useEffect( () => {
-      console.log("UI Rendering Done");   
+      console.log("UI Rendering Done");     
   });
 
   function changeHandler(event) {
