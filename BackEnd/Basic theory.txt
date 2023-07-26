@@ -2,13 +2,13 @@ Difference between Authorization and Authentication
 
 
 
-Authorization ---> access rights / premission 
+Authorization ---> access rights / permission 
 
-like which user to show which which details...
+like which user to show which details...
 
-Ex..	All users dashboard	
+Ex.	All users dashboard	
 Admin --> All courses
-User --> buyed Courses only
+User --> bought Courses only
 Normal_user --> No course
 
 
