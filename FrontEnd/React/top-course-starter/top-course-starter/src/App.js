@@ -8,7 +8,7 @@ import Spinner from "./components/Spinner";
 
 const App = () => {
 
-  const [courses, setCourses] = useState(null);
+  const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
 
   async function fetchData() {
@@ -30,7 +30,7 @@ const App = () => {
   }, []);
 
   return (
-    <div> 
+    <div className="min-h-screen flex flex-col"> 
         <div>
           <Navbar></Navbar>
         </div>
@@ -38,9 +38,7 @@ const App = () => {
         <div>
           <Filter filterData={filterData}/>
         </div>
-
-        {/* if the cards are in await then till that time we need to use loading screen(scroll) */}
-        <div>
+        <div className="w-11/12 max-w-[1200px] mx-auto flex flex-wrap justify-center items-center min-h-[50vh]">
           {
             loading ? (<Spinner></Spinner>) : (<Cards courses={courses} > </Cards>)
           }
